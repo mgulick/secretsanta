@@ -1,0 +1,39 @@
+# -*- mode: yaml -*-
+# vim: set expandtab ts=4 sw=4:
+# vim: set syntax=yaml:
+---
+participants:
+  - name: Alice Appleseed
+    email: alice@example.com
+    address: |-
+      Alice Appleseed
+      c/o Secret Santa
+      1500 Main Street
+      Anytown, USA  12345
+    excludes: []
+  - name: Bob Roberts
+    email: bob@example.com
+    address: |-
+      Bob Roberts
+      c/o Secret Santa
+      1500 Main Street
+      Anytown, USA  12345
+    excludes: []
+  - name: John Doe
+    email: john@example.com
+    address: |-
+      John Doe
+      c/o Secret Santa
+      1501 Main Street
+      Anytown, USA  12345
+    excludes:
+      - Jane Doe
+  - name: Jane Doe
+    email: jane@example.com
+    address: |-
+      Jane Doe
+      c/o Secret Santa
+      1501 Main Street
+      Anytown, USA  12345
+    excludes:
+      - John Doe

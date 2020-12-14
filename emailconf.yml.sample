@@ -1,0 +1,35 @@
+# -*- mode: yaml -*-
+# vim: set expandtab ts=4 sw=4:
+# vim: set syntax=yaml:
+---
+msghdr:
+  from: 'Secret Santa <you@example.com>'
+  subject: '[Confidential] Your Secret Santa Info'
+msgbody: |
+ Hi @FROM@,
+
+ Thanks for participating in this year's Secret Santa!  We will meet on a
+ yet-to-be-finalized date to open gifts together and revel in the glory.  Expect
+ another email soon confirming a date and time.
+
+ You have been chosen as the secret santa for: @TO@
+
+ Their mailing address is:
+ @TO_ADDRESS@
+
+ As a reminder, here are some guidelines:
+
+ * Keep the gift in a reasonable price range, including any shipping costs.
+ * Please be sure the gift will arrive before Christmas.
+
+ Happy Holidays!
+smtpconf:
+  # Arguments to Email::Sender::Transport::SMTP
+  # FYI Depends on CPAN modules MIME::Base64 and Authen::SASL
+  host: smtp.example.com
+  ssl: 1
+  port: 465
+  # SMTP username
+  sasl_username: 'you@example.com'
+  # SMTP password
+  sasl_password: asdf1234
